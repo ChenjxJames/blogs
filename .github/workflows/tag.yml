@@ -24,7 +24,10 @@ jobs:
     - name: build
       run: npm run build
     - name: build 检验
-      run: cat ./public/index.html
+      run: |
+        cd ./public
+        ls -l
+        cd ..
     - name: deploy file
       uses: ChenjxJames/SFTP-Deploy-Action@v1.3.2
       with:
