@@ -28,13 +28,14 @@ npm set-script test "mocha ./test/index.js"
 
 选择所使用的浏览器下载对应版本的驱动程序，并解压放在项目文件夹下
 
+<!-- more -->
+
 * Chrome: [chromedriver(.exe)][chrome]
 * Internet Explorer: [IEDriverServer.exe][release]
 * Edge: [MicrosoftWebDriver.msi][edge]
 * Firefox: [geckodriver(.exe)][geckodriver]
 * Opera: [operadriver(.exe)][operadriver]
 * Safari: [safaridriver]
-
 
 ### 代码示例
 
