@@ -64,5 +64,5 @@ npm install style-loader --save-dev
 4、运行项目
 
 ```bash
-npm run start
+npm start
 ```
