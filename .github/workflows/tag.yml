@@ -46,21 +46,21 @@ jobs:
       run: npm install
     - name: build
       run: npm run build
-    - name: deploy file
-      uses: ChenjxJames/SFTP-Deploy-Action@v1.3.2
-      with:
-        username: '${{ secrets.USERNAME }}'
-        server: '${{ secrets.SERVER_HOST }}'
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        local_path: './public/*'
-        remote_path: '/var/www/blogs'
-        args: '-o ConnectTimeout=5'
+    # - name: deploy file
+    #   uses: ChenjxJames/SFTP-Deploy-Action@v1.3.2
+    #   with:
+    #     username: '${{ secrets.USERNAME }}'
+    #     server: '${{ secrets.SERVER_HOST }}'
+    #     ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+    #     local_path: './public/*'
+    #     remote_path: '/var/www/blogs'
+    #     args: '-o ConnectTimeout=5'
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
-        path: './public/*'
+        path: './public'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v1
