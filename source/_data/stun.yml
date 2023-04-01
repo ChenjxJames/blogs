@@ -1023,3 +1023,8 @@ cdn:
   # share_css: //unpkg.com/social-share.js@1.0.16/dist/css/share.min.css
   share_js:
   share_css:
+
+umami:
+  enable: true
+  src: https://umami.chenjx.com.cn/analysis.js
+  data_website_id: 41c6a261-6d17-46af-9294-e233a6d45e4e
