@@ -22,6 +22,8 @@ sudo service nginx start
 
 ### 这里以站点 `www.test.cn` 为例讲解
 
+<!-- more -->
+
 * 首先将静态站点的文件放置在`/var/www/test`目录下
 
 * 其次将该站点的ssl证书放置在`/etc/nginx/ssl/www.test.cn`目录下
