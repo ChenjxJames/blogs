@@ -813,7 +813,7 @@ pjax:
 
 # Google AdSense
 google_adsense:
-  enable: true
+  enable: false
   client: ca-pub-8211445569499784
   js_src: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 
